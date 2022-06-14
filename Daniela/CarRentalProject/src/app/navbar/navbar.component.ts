@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
 
   
-  add10: number = 10;
+  add10: number = 0;
   addSum() {
     this.add10 = this.add10 + 10;
   }
