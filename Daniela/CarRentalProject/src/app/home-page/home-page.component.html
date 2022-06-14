@@ -1,11 +1,13 @@
-<div class="container">
-    <div class="gap-4 row-1" *ngFor="let car of cars">
-        <div class="col">
-            <div class="card" style="width: 25rem;">
-                <img class="card-img-top" src="{{car.image}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{car.name}}</h5>
-                    <p class="card-text">{{car.year}}</p>
+<div class="py-5">
+    <div class="container">
+        <div class="row hidden-md-up">
+            <div class="col-md-4" *ngFor="let car of cars">
+                <div class="card" style="width: 25rem;">
+                    <img class="card-img-top" style="height: 15rem;" src="{{car.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{car.name}}</h5>
+                        <p class="card-text">{{car.year}}</p>
+                    </div>
                 </div>
             </div>
         </div>

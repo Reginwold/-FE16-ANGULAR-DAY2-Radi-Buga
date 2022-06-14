@@ -1,25 +1,41 @@
-<form [formGroup]="info" (ngSubmit)="onSubmit()">
+<div class="py-5">
+    <div class="container">
+        <form [formGroup]="info" (ngSubmit)="onSubmit()">
 
-    <label>
-    First Name:
-    <input type="text" formControlName="firstName">
+            <div class="row">
+                <label>
+<div class="col-sm-5 col-md-6"> First Name:</div>
+ <input type="text" formControlName="firstName">
 </label>
+            </div>
 
-    <label>
-    Last Name:
-    <input type="text" formControlName="lastName">
+
+            <div class="row">
+                <label>
+                    <div class="col-sm-5 col-md-6"> Last Name:</div>
+  <input type="text" formControlName="lastName">
  </label>
+            </div>
 
-    <label>
-    Age:
-    <input type="text" formControlName="age">
+
+            <div class="row">
+                <label>
+                    <div class="col-sm-5 col-md-6"> Age:</div>
+ <input type="text" formControlName="age">
 </label>
+            </div>
 
-    <label>
-    Email:
-    <input type="text" formControlName="email">
+
+            <div class="row">
+                <label>
+                    <div class="col-sm-5 col-md-6"> Message:</div>
+<input type="text" formControlName="email">
 </label>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
 
-    <input type="submit" class="btn btn-primary" value="Submit">
 
-</form>
+    </div>
+
+</div>
