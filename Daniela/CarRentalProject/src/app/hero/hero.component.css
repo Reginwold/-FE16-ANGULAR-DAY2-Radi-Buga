@@ -1,0 +1,18 @@
+header {
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "hero";
+    place-items: center;
+}
+
+header>* {
+    grid-row: 1;
+    grid-column: 1;
+    grid-area: hero;
+}
+
+header #hero-img {
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+}
